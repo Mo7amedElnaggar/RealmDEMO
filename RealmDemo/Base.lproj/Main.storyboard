@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9We-jS-fIU">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Students-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="studentListVC" customModule="RealmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m3l-06-xIT">
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m3l-06-xIT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="159-SI-Dde"/>
+                            <constraint firstAttribute="trailing" secondItem="m3l-06-xIT" secondAttribute="trailing" id="Ecz-7L-SJh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m3l-06-xIT" secondAttribute="bottom" id="VH2-8f-IS7"/>
+                            <constraint firstItem="m3l-06-xIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gMI-Oy-vQ7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Students" id="Dfl-u0-59s">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-16"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="studentTable" destination="m3l-06-xIT" id="cHC-oL-LgT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="158"/>
+        </scene>
+        <!--Register Student-->
+        <scene sceneID="xee-Ed-469">
+            <objects>
+                <viewController id="3m5-Wa-2lH" customClass="registerStudentVC" customModule="RealmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oas-Km-6ex"/>
+                        <viewControllerLayoutGuide type="bottom" id="X9u-2H-4i9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zLz-C4-FxC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgL-JB-thf">
+                                <rect key="frame" x="10" y="30" width="394" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7S-2Z-eHu">
+                                        <rect key="frame" x="10" y="20" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qF9-mB-Kg6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qdQ-KC-27C">
+                                        <rect key="frame" x="10" y="120" width="374" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKq-DG-zCa" customClass="DesignUIView" customModule="RealmDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FirstName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-im-mGb">
+                                                        <rect key="frame" x="5" y="5" width="172" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Wtz-im-mGb" secondAttribute="bottom" constant="5" id="1Rg-ki-nyV"/>
+                                                    <constraint firstItem="Wtz-im-mGb" firstAttribute="top" secondItem="xKq-DG-zCa" secondAttribute="top" constant="5" id="TK6-Wh-pIN"/>
+                                                    <constraint firstItem="Wtz-im-mGb" firstAttribute="leading" secondItem="xKq-DG-zCa" secondAttribute="leading" constant="5" id="XQr-eN-ps0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Wtz-im-mGb" secondAttribute="trailing" constant="5" id="yft-qn-Fwm"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOw-l6-N1S" customClass="DesignUIView" customModule="RealmDemo" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="182" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LastName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJp-kL-vP3">
+                                                        <rect key="frame" x="5" y="5" width="172" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="LJp-kL-vP3" firstAttribute="leading" secondItem="zOw-l6-N1S" secondAttribute="leading" constant="5" id="5To-D4-gGV"/>
+                                                    <constraint firstItem="LJp-kL-vP3" firstAttribute="top" secondItem="zOw-l6-N1S" secondAttribute="top" constant="5" id="X99-YR-cBN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LJp-kL-vP3" secondAttribute="bottom" constant="5" id="gba-at-oFM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LJp-kL-vP3" secondAttribute="trailing" constant="5" id="x7u-O0-s4q"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PAP-kD-mT5"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ne3-bz-ePy" customClass="DesignUIView" customModule="RealmDemo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="210" width="374" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzX-2b-yWe">
+                                                <rect key="frame" x="5" y="5" width="364" height="40"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3Jv-fO-HPt"/>
+                                            <constraint firstAttribute="bottom" secondItem="nzX-2b-yWe" secondAttribute="bottom" constant="5" id="PLZ-DC-ENd"/>
+                                            <constraint firstItem="nzX-2b-yWe" firstAttribute="leading" secondItem="ne3-bz-ePy" secondAttribute="leading" constant="5" id="Txf-ng-FL4"/>
+                                            <constraint firstItem="nzX-2b-yWe" firstAttribute="top" secondItem="ne3-bz-ePy" secondAttribute="top" constant="5" id="Udk-p6-sZx"/>
+                                            <constraint firstAttribute="trailing" secondItem="nzX-2b-yWe" secondAttribute="trailing" constant="5" id="qwF-Dj-TXB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXk-R6-CME" customClass="DesignUIView" customModule="RealmDemo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="295" width="374" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmQ-Ab-vOd">
+                                                <rect key="frame" x="5" y="5" width="364" height="40"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ZmQ-Ab-vOd" secondAttribute="bottom" constant="5" id="6wX-CF-gaF"/>
+                                            <constraint firstAttribute="height" constant="50" id="7nc-rh-4Jn"/>
+                                            <constraint firstItem="ZmQ-Ab-vOd" firstAttribute="leading" secondItem="mXk-R6-CME" secondAttribute="leading" constant="5" id="QSk-PF-oEJ"/>
+                                            <constraint firstItem="ZmQ-Ab-vOd" firstAttribute="top" secondItem="mXk-R6-CME" secondAttribute="top" constant="5" id="d2A-iv-CkK"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZmQ-Ab-vOd" secondAttribute="trailing" constant="5" id="em2-6w-FMI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbC-sB-Aho" customClass="DesignUIView" customModule="RealmDemo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="597" width="374" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoN-rH-ReC">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <color key="backgroundColor" red="0.0" green="0.2423423864253923" blue="0.42847795050761417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                <state key="normal" title="Add Student">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="registerStudentButton:" destination="3m5-Wa-2lH" eventType="touchUpInside" id="frx-er-9Tk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="hoN-rH-ReC" firstAttribute="leading" secondItem="NbC-sB-Aho" secondAttribute="leading" id="1pr-PX-GOy"/>
+                                            <constraint firstAttribute="trailing" secondItem="hoN-rH-ReC" secondAttribute="trailing" id="5Bl-mr-ivT"/>
+                                            <constraint firstAttribute="height" constant="50" id="QuC-Yd-c5F"/>
+                                            <constraint firstAttribute="bottom" secondItem="hoN-rH-ReC" secondAttribute="bottom" id="SxI-wB-Lq0"/>
+                                            <constraint firstItem="hoN-rH-ReC" firstAttribute="top" secondItem="NbC-sB-Aho" secondAttribute="top" id="egV-Jk-7Xg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NbC-sB-Aho" secondAttribute="trailing" constant="10" id="CHo-JB-rpN"/>
+                                    <constraint firstAttribute="trailing" secondItem="mXk-R6-CME" secondAttribute="trailing" constant="10" id="GsN-iv-tg7"/>
+                                    <constraint firstItem="ne3-bz-ePy" firstAttribute="top" secondItem="qdQ-KC-27C" secondAttribute="bottom" constant="40" id="HbF-EC-w1T"/>
+                                    <constraint firstAttribute="trailing" secondItem="ne3-bz-ePy" secondAttribute="trailing" constant="10" id="LFu-JS-lyu"/>
+                                    <constraint firstAttribute="trailing" secondItem="qdQ-KC-27C" secondAttribute="trailing" constant="10" id="M6n-rr-YbZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q7S-2Z-eHu" secondAttribute="trailing" constant="10" id="QNc-Yc-2do"/>
+                                    <constraint firstItem="mXk-R6-CME" firstAttribute="top" secondItem="nzX-2b-yWe" secondAttribute="bottom" constant="40" id="SVN-eg-qv9"/>
+                                    <constraint firstItem="Q7S-2Z-eHu" firstAttribute="top" secondItem="KgL-JB-thf" secondAttribute="top" constant="20" id="VFM-X6-MYO"/>
+                                    <constraint firstItem="Q7S-2Z-eHu" firstAttribute="leading" secondItem="KgL-JB-thf" secondAttribute="leading" constant="10" id="VaY-iz-WQZ"/>
+                                    <constraint firstItem="qdQ-KC-27C" firstAttribute="top" secondItem="Q7S-2Z-eHu" secondAttribute="bottom" constant="50" id="Vax-5c-v3h"/>
+                                    <constraint firstItem="ne3-bz-ePy" firstAttribute="leading" secondItem="KgL-JB-thf" secondAttribute="leading" constant="10" id="dHN-5b-nhh"/>
+                                    <constraint firstItem="qdQ-KC-27C" firstAttribute="leading" secondItem="KgL-JB-thf" secondAttribute="leading" constant="10" id="n3Y-xa-ACg"/>
+                                    <constraint firstItem="NbC-sB-Aho" firstAttribute="leading" secondItem="KgL-JB-thf" secondAttribute="leading" constant="10" id="nbh-ck-Z5n"/>
+                                    <constraint firstAttribute="bottom" secondItem="NbC-sB-Aho" secondAttribute="bottom" id="u6b-DO-53W"/>
+                                    <constraint firstItem="mXk-R6-CME" firstAttribute="leading" secondItem="KgL-JB-thf" secondAttribute="leading" constant="10" id="vE2-yi-MIm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="X9u-2H-4i9" firstAttribute="top" secondItem="KgL-JB-thf" secondAttribute="bottom" constant="10" id="3Rw-Qg-UqA"/>
+                            <constraint firstItem="KgL-JB-thf" firstAttribute="leading" secondItem="zLz-C4-FxC" secondAttribute="leading" constant="10" id="8Zu-Gd-RM3"/>
+                            <constraint firstAttribute="trailing" secondItem="KgL-JB-thf" secondAttribute="trailing" constant="10" id="PIH-FN-uEf"/>
+                            <constraint firstItem="KgL-JB-thf" firstAttribute="top" secondItem="oas-Km-6ex" secondAttribute="bottom" constant="10" id="nuk-l2-aQx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Register Student" id="rcx-Zu-Rlt">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-16"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="email" destination="nzX-2b-yWe" id="1FJ-ot-R6r"/>
+                        <outlet property="firstName" destination="Wtz-im-mGb" id="4Uv-fs-PhD"/>
+                        <outlet property="lastName" destination="LJp-kL-vP3" id="xp9-51-2fQ"/>
+                        <outlet property="phone" destination="ZmQ-Ab-vOd" id="AGn-eT-Loj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k20-EB-hIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="865"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gyQ-5U-Mi3">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9We-jS-fIU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gI7-s4-MO4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="X87-Ow-AiX"/>
+                        <segue destination="3m5-Wa-2lH" kind="relationship" relationship="viewControllers" id="vym-BV-eCP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Mp-Zd-lBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-975" y="456"/>
+        </scene>
+    </scenes>
+</document>
