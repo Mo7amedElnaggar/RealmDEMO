@@ -6,10 +6,11 @@ simple iOS App that uses Realm Mobile DataBase for more info. please see https:/
 I just started learning about ``` Realm ``` Mobile DataBase it’s Very Simple and Powerful.
 
 so I used to Practice for What I was learning so far
-my App Contains 2 TapBar Controllers 
-one of them is to 
-    * list out what is stored in Local DataBase on Device
-    * You can Register New row in Realm Mobile DataBase
+
+my App Contains 2 TapBar Controllers :
+
+  * list out what is stored in Local DataBase on Device
+  * You can Register New row in Realm Mobile DataBase
 
 ## Frames
 ![](ScreenShot/2Frames.png)
